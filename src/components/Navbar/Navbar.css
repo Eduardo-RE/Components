@@ -1,0 +1,22 @@
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.logo {
+  font-size: large;
+}
+
+.button-navbar {
+  color: #000;
+  font-size: large;
+  margin-left: 24px;
+  text-decoration: dashed;
+}
+
+.button-navbar:hover {
+  color: rgb(0, 255, 13);
+}
