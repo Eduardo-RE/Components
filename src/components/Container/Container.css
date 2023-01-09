@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.subTitle {
+  padding: 10px;
+}
+
+.txt-container {
+  margin-left: 40px;
+}
+
+.firstTxt {
+  font-size: medium;
+  max-width: 600px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.img {
+  width: 500px;
+  margin-left: 200px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.secondTxt-container {
+  margin-left: 200px;
+}
+
+.secondTxt {
+  font-size: medium;
+  max-width: 600px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.second-img {
+  width: 500px;
+  margin-left: 40px;
+}
