@@ -68,6 +68,24 @@ const Footer = () => {
             Opcion 7
           </a>
         </div>
+        <div className="options-row">
+          <h4 className="options-title">Desarrollo</h4>
+          <a href="/" className="options">
+            Opcion 1
+          </a>
+          <a href="/" className="options">
+            Opcion 2
+          </a>
+          <a href="/" className="options">
+            Opcion 3
+          </a>
+          <a href="/" className="options">
+            Opcion 4
+          </a>
+          <a href="/" className="options">
+            Opcion 5
+          </a>
+        </div>
       </div>
       <div className="end-footer">
         <div className="end-footer-txt">
