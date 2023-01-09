@@ -15,7 +15,7 @@ const Home = () => {
       <NormalButton />
       <h1 className="title">Contenedor de texto y objetos</h1>
       <Container />
-      <h1 className="title"></h1>
+      <h1 className="title">Otra seccion</h1>
     </>
   );
 };
