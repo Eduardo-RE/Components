@@ -1,6 +1,7 @@
 import React from "react";
 import NormalButton from "../components/Button/NormalButton";
 import Container from "../components/Container/Container";
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import TexField from "../components/TextField/TexField";
 import "./Home.css";
@@ -16,6 +17,7 @@ const Home = () => {
       <h1 className="title">Contenedor de texto y objetos</h1>
       <Container />
       <h1 className="title">Otra seccion</h1>
+      <Footer />
     </>
   );
 };
