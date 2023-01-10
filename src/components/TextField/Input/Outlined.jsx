@@ -23,28 +23,29 @@ const Outlined = () => {
   return (
     <div className="texfield-container">
       <div className="material-textfield">
-        <input placeholder=" " type="text" />
-        <label>Outlined</label>
+        <input className="input" placeholder=" " type="text" />
+        <label className="label">Outlined</label>
       </div>
 
       <div className="material-textfield" style={{ marginLeft: "20px" }}>
-        <input placeholder=" " type="number" />
-        <label>Number</label>
+        <input className="input" placeholder=" " type="number" />
+        <label className="label">Number</label>
       </div>
 
       <div className="material-textfield" style={{ marginLeft: "20px" }}>
-        <input placeholder=" " type="time" />
-        <label>Time</label>
+        <input className="input" placeholder=" " type="time" />
+        <label className="label">Time</label>
       </div>
 
       <div className="material-textfield" style={{ marginLeft: "20px" }}>
         <input
+          className="input"
           placeholder=" "
           type={passwordType}
           value={passwordInput}
           onChange={(e) => handlePasswordChange(e, e)}
         />
-        <label>Password</label>
+        <label className="label">Password</label>
         {/* <button
           className="absolute left-56 bottom-3"
           onClick={togglePassword}

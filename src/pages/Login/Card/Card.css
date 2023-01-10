@@ -1,0 +1,125 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 60vw;
+  align-items: center;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(214, 212, 212);
+  height: fit-content;
+  width: 300px;
+  padding: 70px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.login-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.email-input {
+  width: 240px;
+  margin-top: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+  text-indent: 5px;
+  padding: 5px;
+}
+
+.email-input:focus {
+  border-color: #0071e1;
+}
+
+.forgot {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.btn {
+  font-weight: 600;
+  width: 250px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: medium;
+  border-radius: 6px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: #0071e1;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #0071e1;
+  transition-duration: 300ms;
+}
+
+.btn-fb {
+  font-weight: 600;
+  width: 250px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: medium;
+  border-radius: 6px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: rgb(0, 0, 0);
+}
+
+.btn-fb:hover {
+  color: white;
+  background-color: rgb(0, 47, 255);
+  transition-duration: 300ms;
+}
+
+.btn-gm {
+  font-weight: 600;
+  width: 250px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: medium;
+  border-radius: 6px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: rgb(0, 0, 0);
+}
+
+.btn-gm:hover {
+  color: white;
+  background-color: rgb(255, 0, 0);
+  transition-duration: 300ms;
+}
+
+.btn-gh {
+  font-weight: 600;
+  width: 250px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: medium;
+  border-radius: 6px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: rgb(0, 0, 0);
+}
+
+.btn-gh:hover {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  transition-duration: 300ms;
+}

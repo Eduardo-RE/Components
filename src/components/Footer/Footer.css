@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 30px;
+  margin-top: 40px;
 }
 
 .options-row {
@@ -24,7 +25,7 @@
 }
 
 .options:hover {
-  color: #1d8b02;
+  color: #0071e1;
 }
 
 .end-footer {
@@ -43,6 +44,7 @@
 }
 
 .end-footer-terms {
+  margin-top: 5px;
     font-size: 14px;
     color: #fff;
   }

@@ -10,14 +10,15 @@
   font-size: medium;
   border-radius: 6px;
   border-width: 0px;
+  cursor: pointer;
   background-color: white;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  color: rgb(0, 255, 13);
+  color: #0071e1;
 }
 
 .btn-normal:hover {
   color: white;
-  background-color: rgb(0, 255, 13);
+  background-color: #0071e1;
   transition-duration: 300ms;
 }
 
@@ -36,16 +37,17 @@
 .btn-split {
   width: fit-content;
   height: fit-content;
+  cursor: pointer;
   padding: 10px;
   font-size: medium;
   border-width: 0px;
-  background-color: rgb(0, 255, 13);
+  background-color: #0071e1;
   color: #fff;
 }
 
 .btn-split:hover {
   color: white;
-  background-color: rgb(0, 187, 9);
+  background-color: #0071e1;
   transition-duration: 300ms;
 }
 
@@ -81,7 +83,7 @@
 }
 
 .group {
-  background-color: rgb(0, 255, 13);
+  background-color: #0071e1;
   border: none;
   color: #fff;
   padding: 10px;
@@ -93,5 +95,5 @@
 }
 
 .group:hover {
-  background-color: rgb(0, 189, 9);
+  background-color: #0071e1;
 }
