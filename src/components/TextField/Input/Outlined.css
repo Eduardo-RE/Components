@@ -1,5 +1,6 @@
 .material-textfield {
   position: relative;
+  margin-left: 20px;
 }
 
 .label {
@@ -39,4 +40,23 @@
 .input:not(:placeholder-shown) + label {
   top: 0;
   transform: translateY(-50%) scale(0.9);
+}
+
+.btn-password {
+  position: absolute;
+  left: 185px;
+  bottom: 13px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.eye-slash-icon {
+  width: 20px;
+  height: 20px;
 }

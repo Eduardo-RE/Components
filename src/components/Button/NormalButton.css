@@ -6,13 +6,13 @@
 .btn-normal {
   width: 150px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: medium;
   border-radius: 6px;
   border-width: 0px;
   cursor: pointer;
   background-color: white;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   color: #0071e1;
 }
 
@@ -47,7 +47,7 @@
 
 .btn-split:hover {
   color: white;
-  background-color: #0071e1;
+  background-color: #0053a7;
   transition-duration: 300ms;
 }
 
@@ -95,5 +95,5 @@
 }
 
 .group:hover {
-  background-color: #0071e1;
+  background-color: #0053a7;
 }

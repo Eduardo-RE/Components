@@ -1,5 +1,5 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./Outlined.css";
 
@@ -27,17 +27,17 @@ const Outlined = () => {
         <label className="label">Outlined</label>
       </div>
 
-      <div className="material-textfield" style={{ marginLeft: "20px" }}>
+      <div className="material-textfield">
         <input className="input" placeholder=" " type="number" />
         <label className="label">Number</label>
       </div>
 
-      <div className="material-textfield" style={{ marginLeft: "20px" }}>
+      <div className="material-textfield">
         <input className="input" placeholder=" " type="time" />
         <label className="label">Time</label>
       </div>
 
-      <div className="material-textfield" style={{ marginLeft: "20px" }}>
+      <div className="material-textfield">
         <input
           className="input"
           placeholder=" "
@@ -46,17 +46,17 @@ const Outlined = () => {
           onChange={(e) => handlePasswordChange(e, e)}
         />
         <label className="label">Password</label>
-        {/* <button
-          className="absolute left-56 bottom-3"
+        <button
+          className="btn-password"
           onClick={togglePassword}
           id="show-password"
         >
           {passwordType === "password" ? (
-            <FontAwesomeIcon icon={solid('user-secret')} />
+            <FontAwesomeIcon icon={faEyeSlash} className="eye-icon" />
           ) : (
-            <FontAwesomeIcon icon="fa-solid fa-eye-slash" />
+            <FontAwesomeIcon icon={faEye} className="eye-slash-icon" />
           )}
-        </button> */}
+        </button>
       </div>
     </div>
   );

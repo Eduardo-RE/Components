@@ -15,7 +15,7 @@
   height: fit-content;
   width: 300px;
   padding: 70px;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
@@ -28,8 +28,8 @@
   width: 240px;
   margin-top: 15px;
   font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  border: 1px solid rgb(68, 65, 65);
   outline: none;
   text-indent: 5px;
   padding: 5px;
@@ -50,7 +50,7 @@
   height: 35px;
   margin-top: 15px;
   font-size: medium;
-  border-radius: 6px;
+  border-radius: 8px;
   border-width: 0px;
   cursor: pointer;
   background-color: white;
@@ -70,7 +70,7 @@
   height: 35px;
   margin-top: 15px;
   font-size: medium;
-  border-radius: 6px;
+  border-radius: 8px;
   border-width: 0px;
   cursor: pointer;
   background-color: white;
@@ -90,7 +90,7 @@
   height: 35px;
   margin-top: 15px;
   font-size: medium;
-  border-radius: 6px;
+  border-radius: 8px;
   border-width: 0px;
   cursor: pointer;
   background-color: white;
@@ -110,7 +110,7 @@
   height: 35px;
   margin-top: 15px;
   font-size: medium;
-  border-radius: 6px;
+  border-radius: 8px;
   border-width: 0px;
   cursor: pointer;
   background-color: white;
