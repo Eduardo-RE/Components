@@ -17,8 +17,8 @@ const Navbar = () => {
             <button className="button-navbar">Login</button>
           </Link>
 
-          <Link>
-            <button className="button-navbar">Servicios</button>
+          <Link to="/crud">
+            <button className="button-navbar">CRUD</button>
           </Link>
 
           <Link>

@@ -1,0 +1,40 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 20vw;
+  align-items: center;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 70%;
+  max-height: 80%;
+}
+
+.table-head {
+  background-color: #0071e1;
+  border-bottom: 1px solid rgb(66, 66, 66);
+}
+
+.table-title {
+  padding: 12px;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.table-body {
+  border: 1px solid rgb(165, 165, 165);
+}
+
+.table-data {
+  padding: 10px;
+  font-size: medium;
+  color: rgb(53, 53, 53);
+  white-space: nowrap;
+  text-align: center;
+}
