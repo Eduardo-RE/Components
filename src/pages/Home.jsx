@@ -10,12 +10,15 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <h1 className="title">Campos de texto</h1>
-      <TexField />
-      <h1 className="title">Botones</h1>
-      <NormalButton />
-      <h1 className="title">Contenedor de texto y objetos</h1>
-      <Container />
+      <div style={{marginTop: "50px" }}>
+        <h1 className="title" >Campos de texto</h1>
+        <TexField />
+        <h1 className="title">Botones</h1>
+        <NormalButton />
+        <h1 className="title">Contenedor de texto y objetos</h1>
+        <Container />
+      </div>
+      
       <Footer />
     </>
   );

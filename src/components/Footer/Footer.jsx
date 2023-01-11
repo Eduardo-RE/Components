@@ -10,6 +10,9 @@ const Footer = () => {
           <a href="/" className="options">
             Opcion 1
           </a>
+          <a href="/" className="options">
+            Opcion 2
+          </a>
         </div>
         <div className="options-row">
           <h4 className="options-title">Redes Sociales</h4>
@@ -89,8 +92,13 @@ const Footer = () => {
       </div>
       <div className="end-footer">
         <div className="end-footer-txt">
-          <div className="end-footer-name">@2018 RED-DEV CORPORATION OF MEXICO</div>
-          <div className="end-footer-terms">TERMS AND CONDITIONS PRIVAY POLICY/YOUR BAJA CALIFORNIA PRIVACY RIGHTS</div>
+          <div className="end-footer-name">
+            @2018 RED-DEV CORPORATION OF MEXICO
+          </div>
+          <div className="end-footer-terms">
+            TERMS AND CONDITIONS PRIVAY POLICY/YOUR BAJA CALIFORNIA PRIVACY
+            RIGHTS
+          </div>
         </div>
       </div>
     </>
