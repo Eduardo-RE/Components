@@ -1,0 +1,71 @@
+.add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(24px);
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+}
+
+.add-box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(214, 212, 212);
+  height: fit-content;
+  width: 300px;
+  padding: 70px;
+  border-radius: 30px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.add-input {
+  width: 240px;
+  margin-top: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(68, 65, 65);
+  outline: none;
+  text-indent: 5px;
+  padding: 5px;
+}
+
+.add-input:focus {
+  border-color: #0071e1;
+}
+
+.add-btn {
+  font-weight: 600;
+  width: 250px;
+  height: 35px;
+  margin-top: 15px;
+  font-size: medium;
+  border-radius: 8px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: #0071e1;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: white;
+}
+
+.add-btn:hover {
+  color: white;
+  background-color: #004a94;
+  transition-duration: 300ms;
+}
+
+.cancel-btn {
+    font-weight: 600;
+    width: 250px;
+    height: 35px;
+    margin-top: 15px;
+    font-size: medium;
+    border-radius: 8px;
+    border-width: 0px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    color: #0071e1;
+  }

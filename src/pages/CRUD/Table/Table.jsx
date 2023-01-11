@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Table.css";
+import Add from "./Add/Add";
 import Users from "./Users";
 import data from "./Users";
 
@@ -27,8 +28,22 @@ const Table = () => {
     history("/crud");
   };
 
+  const [isShown, setIsShown] = useState(false);
+  const handleClick = () => {
+    // 👇️ toggle shown state
+    setIsShown((current) => !current);
+  };
+
   return (
     <>
+      {isShown && (
+        <div style={{ zIndex: "50" }}>
+          <Add />
+        </div>
+      )}
+      <button className="btn-add" onClick={() => handleClick()}>
+        Agregar usuario
+      </button>
       <div className="main-container">
         <div className="table-container">
           <table className="table-items">
