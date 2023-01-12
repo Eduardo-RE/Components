@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Users from "../Users";
+import Users from "../Data/Users";
 import "./Edit.css";
 
 const Edit = () => {

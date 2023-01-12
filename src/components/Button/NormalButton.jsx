@@ -1,3 +1,4 @@
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./NormalButton.css";
 
@@ -16,7 +17,7 @@ const NormalButton = () => {
           Split button
         </button>
         <div className="dropdown">
-          <button className="btn-split">Icon</button>
+          <button className="btn-split"><FontAwesomeIcon icon={faCaretDown}/></button>
           <div className="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { useNavigate } from "react-router-dom";
-import Users from "../Users";
+import Users from "../Data/Users";
 import "./Add.css";
 
 const Add = () => {

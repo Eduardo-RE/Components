@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Table.css";
 import Add from "./Add/Add";
-import Users from "./Users";
-import data from "./Users";
+import Users from "./Data/Users";
+import data from "./Data/Users";
 import Edit from "./Edit/Edit";
 
 const formatter = new Intl.NumberFormat("en-US", {
