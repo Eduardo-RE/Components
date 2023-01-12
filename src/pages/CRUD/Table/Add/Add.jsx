@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { useNavigate } from "react-router-dom";
 import Users from "../Users";
+import "./Add.css";
 
 const Add = () => {
   const [isShown, setIsShown] = useState(true);
@@ -75,8 +76,12 @@ const Add = () => {
               type="number"
               required
             />
-            <button className="add-btn">Agregar</button>
-            <button className="cancel-btn">Cancelar</button>
+            <button className="add-btn" onClick={(e) => handleSubmit(e, e)}>
+              Agregar
+            </button>
+            <button className="cancel-btn" onClick={handleClick}>
+              Cancelar
+            </button>
           </div>
         </div>
       )}
