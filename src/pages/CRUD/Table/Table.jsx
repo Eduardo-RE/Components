@@ -4,6 +4,7 @@ import "./Table.css";
 import Add from "./Add/Add";
 import Users from "./Users";
 import data from "./Users";
+import Edit from "./Edit/Edit";
 
 const formatter = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -23,17 +24,6 @@ const Table = () => {
     }).indexOf(id);
 
     Users.splice(index, 1);
-    //   toast.success("La fila se elimino correctamente", {
-    //     position: "top-right",
-    //     autoClose: 5000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: false,
-    //     draggable: true,
-    //     progress: undefined,
-    //     theme: "light",
-    //   });
-
     history("/crud");
   };
 
@@ -43,6 +33,19 @@ const Table = () => {
     setIsShown((current) => !current);
   };
 
+  const [isShownEdit, setIsShownEdit] = useState(false);
+  const handleClickEdit = (id, name, email, description, price) => {
+    // 👇️ toggle shown state
+    setIsShownEdit((current) => !current);
+
+    // This shows the edit values
+    localStorage.setItem("Name", name);
+    localStorage.setItem("Email", email);
+    localStorage.setItem("Description", description);
+    localStorage.setItem("Price", price);
+    localStorage.setItem("Id", id);
+  };
+
   return (
     <>
       {isShown && (
@@ -50,10 +53,16 @@ const Table = () => {
           <Add />
         </div>
       )}
+
+      {isShownEdit && (
+        <div style={{ zIndex: "50" }}>
+          <Edit />
+        </div>
+      )}
       <div className="main-container">
         <button className="btn-add" onClick={() => handleClick()}>
-        Agregar usuario
-      </button>
+          Agregar usuario
+        </button>
         <div className="table-container">
           <table className="table-items">
             <thead className="table-head">
@@ -68,7 +77,7 @@ const Table = () => {
             {data.length > 0 ? (
               <>
                 {data.map((user, idx) => (
-                  <tbody className="table-body">
+                  <tbody className="table-body" key={user.id}>
                     <tr style={{ backgroundColor: "#fff" }}>
                       <td className="table-data">{user.Name}</td>
                       <td className="table-data">{user.Email}</td>
@@ -84,7 +93,20 @@ const Table = () => {
                           Eliminar
                         </button>
 
-                        <button className="btn-edit">Editar</button>
+                        <button
+                          className="btn-edit"
+                          onClick={() =>
+                            handleClickEdit(
+                              user.id,
+                              user.Name,
+                              user.Email,
+                              user.Description,
+                              user.Price
+                            )
+                          }
+                        >
+                          Editar
+                        </button>
                       </td>
                     </tr>
                   </tbody>
