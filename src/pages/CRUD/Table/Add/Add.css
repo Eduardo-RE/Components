@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  background-color: rgb(214, 212, 212);
+  background-color: rgb(255, 255, 255);
   height: fit-content;
   width: 300px;
   padding: 70px;
@@ -22,19 +22,49 @@
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.add-input {
-  width: 240px;
-  margin-top: 15px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid rgb(68, 65, 65);
-  outline: none;
-  text-indent: 5px;
-  padding: 5px;
+.add-material-textfield {
+  position: relative;
+  margin-top: 20px;
 }
 
+.add-label {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: gray;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: 0.1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+.add-input {
+  font-size: 1rem;
+  outline: none;
+  width: 240px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  transition: 0.1s ease-out;
+}
+.add-input:hover {
+  border-color: black;
+}
 .add-input:focus {
   border-color: #0071e1;
+}
+.add-input:focus + label {
+  color: #0071e1;
+  top: 0;
+  transform: translateY(-50%) scale(0.9);
+}
+.add-input:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(0.9);
 }
 
 .add-btn {

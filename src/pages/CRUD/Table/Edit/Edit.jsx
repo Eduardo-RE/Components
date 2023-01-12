@@ -53,38 +53,53 @@ const Edit = () => {
       {isShown && (
         <div className="edit-container">
           <div className="edit-box">
-            <input
-              placeholder="Nombre completo"
-              className="edit-input"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              required
-            />
-            <input
-              placeholder="Correo electronico"
-              className="edit-input"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              required
-            />
-            <input
-              placeholder="Descripcion"
-              className="edit-input"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              type="text"
-              required
-            />
-            <input
-              placeholder="Precio"
-              className="edit-input"
-              value={price}
-              onChange={(e) => setPrice(e.target.value)}
-              type="number"
-              required
-            />
+          <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+              <label className="add-label">Nombre completo</label>
+            </div>
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <label className="add-label">Correo electronico</label>
+            </div>
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="text"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                required
+              />
+              <label className="add-label">Descripcion</label>
+            </div>
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="number"
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+                required
+              />
+              <label className="add-label">Precio</label>
+            </div>
             <button className="edit-btn" onClick={(e) => handleSubmit(e, e)}>
               Actualizar
             </button>

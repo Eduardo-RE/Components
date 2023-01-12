@@ -48,34 +48,51 @@ const Add = () => {
       {isShown && (
         <div className="add-container">
           <div className="add-box">
-            <input
-              placeholder="Nombre completo"
-              className="add-input"
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              required
-            />
-            <input
-              placeholder="Correo electronico"
-              className="add-input"
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              required
-            />
-            <input
-              placeholder="Descripcion"
-              className="add-input"
-              onChange={(e) => setDescription(e.target.value)}
-              type="text"
-              required
-            />
-            <input
-              placeholder="Precio"
-              className="add-input"
-              onChange={(e) => setPrice(e.target.value)}
-              type="number"
-              required
-            />
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="text"
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+              <label className="add-label">Nombre completo</label>
+            </div>
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="email"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <label className="add-label">Correo electronico</label>
+            </div>
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="text"
+                onChange={(e) => setDescription(e.target.value)}
+                required
+              />
+              <label className="add-label">Descripcion</label>
+            </div>
+
+            <div className="add-material-textfield">
+              <input
+                className="add-input"
+                placeholder=" "
+                type="number"
+                onChange={(e) => setPrice(e.target.value)}
+                required
+              />
+              <label className="add-label">Precio</label>
+            </div>
+
             <button className="add-btn" onClick={(e) => handleSubmit(e, e)}>
               Agregar
             </button>
