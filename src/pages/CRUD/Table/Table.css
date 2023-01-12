@@ -1,12 +1,12 @@
 .btn-add {
   display: flex;
+  padding: 10px;
   margin-bottom: 20px;
   margin-top: 100px;
   width: fit-content;
-  padding: 10px;
   height: fit-content;
-  margin-left: 0px;
   font-size: medium;
+  font-weight: 600;
   border-radius: 6px;
   border-width: 0px;
   cursor: pointer;
