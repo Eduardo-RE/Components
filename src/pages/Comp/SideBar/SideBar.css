@@ -1,16 +1,75 @@
 .sidebar-container {
-  position: absolute;
+  position: fixed;
   width: fit-content;
   height: 100%;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 16px -4px rgb(0 0 0 / 0.1);
 }
 
+.sidebar-logo {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.line-logo {
+  border-top: 1px solid rgb(109, 106, 106);
+  width: 80%;
+  margin: auto;
+}
+
+
 .sideoptions-container {
-  padding: 15px;
+  padding: 5px;
   font-size: 18px;
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.button-sidebar-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.button-sidebar {
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  cursor: pointer;
+}
+
+.button-sidebar-container:hover {
+  background-color: #0071e1;
+  color: #fff;
+}
+
+.sideoptions-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sideoptions-container a:hover {
+  color: #fff;
+}
+
+.icon-text {
+  margin-right: 10px;
+}
+
+.deploy-icon {
+  display: flex;
+  flex-direction: row;
+  padding: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.deploy-icon:hover {
+  color: #fff;
+  background-color: #0071e1;
 }
