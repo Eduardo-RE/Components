@@ -1,0 +1,16 @@
+.sidebar-container {
+  position: absolute;
+  width: fit-content;
+  height: 100%;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+.sideoptions-container {
+  padding: 15px;
+  font-size: 18px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}

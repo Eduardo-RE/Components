@@ -17,10 +17,10 @@
 }
 
 .btn-add:hover {
-    color: white;
-    background-color: #0257ac;
-    transition-duration: 300ms;
-  }
+  color: white;
+  background-color: #0257ac;
+  transition-duration: 300ms;
+}
 
 .main-container {
   display: flex;

@@ -21,8 +21,8 @@ const Navbar = () => {
             <button className="button-navbar">CRUD</button>
           </Link>
 
-          <Link>
-            <button className="button-navbar">Contacto</button>
+          <Link to="/components">
+            <button className="button-navbar">Componentes</button>
           </Link>
 
           <Link>
