@@ -6,10 +6,16 @@
     0 4px 16px -4px rgb(0 0 0 / 0.1);
 }
 
+.icon-logo {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
 .sidebar-logo {
   margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .line-logo {
@@ -18,14 +24,13 @@
   margin: auto;
 }
 
-
 .sideoptions-container {
   padding: 5px;
   font-size: 18px;
   display: flex;
-  height: 100%;
+  height: fit-content;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .button-sidebar-container {
@@ -72,4 +77,8 @@
 .deploy-icon:hover {
   color: #fff;
   background-color: #0071e1;
+}
+
+.desplegado {
+  width: 100px;
 }
