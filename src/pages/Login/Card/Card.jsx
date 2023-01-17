@@ -1,4 +1,4 @@
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faDragon, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -25,7 +25,10 @@ const Card = () => {
   return (
     <div className="login-container">
       <div className="login-box">
-        <img className="login-logo" src={Logo} />
+        <FontAwesomeIcon
+          icon={faDragon}
+          style={{ width: "auto", height: "50px", marginBottom: "20px" }}
+        />
         <input
           placeholder="Correo electronico"
           className="email-input"
@@ -41,7 +44,7 @@ const Card = () => {
           />
           <button
             className="btn-password"
-            style={{left: "220px", bottom: "4px"}}
+            style={{ left: "220px", bottom: "4px" }}
             onClick={togglePassword}
             id="show-password"
           >
